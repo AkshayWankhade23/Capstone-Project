@@ -47,10 +47,7 @@ const Port = process.env.PORT || 4000;
 // });
 
 mongoose
-  .connect(process.env.MONGODB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGODB_URL)
   .then(() => {
     app.listen(Port, () => {
       console.log(`Server is running on http://localhost:${Port}`);
