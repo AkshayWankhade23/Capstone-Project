@@ -11,6 +11,6 @@
   "scripts": {
     "prebuild": "node -v && npm -v",
     "build": "npm install",
-    "start": "npx nodemon index"
+    "start": "node index.js"
   }
 }
